@@ -1,0 +1,73 @@
+
+    <ion-side-menus enable-menu-with-back-views="true">
+		<ion-side-menu-content > 
+		<ion-nav-view style="background: #005B96; background-size: cover;">
+	    
+			<ion-content style="background:#005B96; background-size: cover;">
+				<div class="row" style="background:#005B96; font-weight:bold">
+					<div class="col col-20" style="padding-top:0px;border-bottom:none;text-align:left;">
+						<button menu-toggle="left" class="button button-icon ion-navicon" style="font-size:32px; color:white;"></button>
+					</div>
+					<div class="col col-60" class="button-bar" style="text-align:center; font-size:14px;">
+						<h4 style="text-align:center; color:#ffdbac">Student Details</h4>
+					</div>
+					<div class="col col-20" style="text-align:right; font-size:12px; color:white ; border-bottom:none">
+						<button class="w3-button w3-green w3-round-xxlarge" style="margin-right:8px;" ng-click="showPopup()">
+							<i class="icon ion-search"></i>
+						</button>
+					</div>
+					
+				</div>  
+				
+				
+			<ion-list>
+				<div class="w3-card-4 w3-margin" ng-repeat="std in students" >
+					<div style="margin-left:10px;">
+						
+						<h3 style="font-size: 20px;padding-bottom: 2px;color: #b3ecec;">{{std.name}}</h3>
+						<span style="font-size: 16px;padding-bottom: 2px;color: #b3ecec;">{{std.email}}</span><br>
+						<span style="font-size: 16px;padding-bottom: 2px;color: #b3ecec;">{{std.phone}}</span><br>
+						<span style="font-size: 16px;padding-bottom: 2px;color: #b3ecec; ">Keyskill: </span>
+						<span style="font-size: 16px;padding-bottom: 2px;color: #ffd4e5; " ng-repeat="ks in std.keyskill" >{{ks}},&nbsp</span><br>
+						<span style="font-size: 16px;padding-bottom: 2px;color: #b3ecec; ">Personal skill: </span>
+						<span style="font-size: 16px;padding-bottom: 2px;color: #ffd4e5;"  ng-repeat="ps in std.pskill">&nbsp{{ps}},&nbsp</span><br>
+						<span style="font-size: 16px;padding-bottom: 2px;color: #b3ecec; ">Degree: </span>
+						<span style="font-size: 16px;padding-bottom: 2px;color: #ffd4e5;">{{std.education.gdeg}}</span>&nbsp&nbsp
+						<span style="font-size: 16px;padding-bottom: 2px;color: #ffd4e5;">{{std.education.mdeg}}</span>
+						
+					</div>
+					<br/>
+				</div>								
+			</ion-list>
+	
+	</ion-content>
+		</ion-nav-view>
+		</ion-side-menu-content>
+		
+		
+		
+		<ion-side-menu side="left"  style="background:transparent;background-size: 100% 100% !important;">
+				<ion-header-bar class="bar-royal">
+					<h1 class="title"><i class="icon ion-home"> </i>Menu</h1>
+				</ion-header-bar>
+				<ion-content style="background: url('img/bg1.jpg'); background-size: 100% 100% !important;">
+					<ion-list>
+<!--						<ion-item menu-close href="#/list">User Listing</ion-item>					-->
+						<ion-item style="border:none;font-size:18px;color:#5a0044;font-weight:bold;font-family:Courier New" menu-close ng-click="all()">All</ion-item><hr style="margin-top:4px;margin-bottom:4px"></hr>
+					
+						<ion-item style="border:none;font-size:18px;color:#5a0044;font-weight:bold;font-family:Courier New" menu-close ng-click="cd()">Company Details</ion-item><hr style="margin-top:4px;margin-bottom:4px"></hr>
+					
+						
+					
+						
+					<!--<ion-item menu-close ng-click="add()"><i class="icon ion-android-happy">  </i>Admin Login</ion-item>
+						<ion-item menu-close ng-click="myac()"><i class="icon ion-android-person">  </i>My Account</ion-item>-->
+						
+					
+						<ion-item style="border:none;font-size:18px;color:#5a0044;font-weight:bold;font-family:Courier New" menu-close ng-click="logout()">Logout</ion-item><hr style="margin-top:4px;margin-bottom:4px"></hr>
+					</ion-list>
+					
+					
+				</ion-content>
+		</ion-side-menu>
+		</ion-side-menus>

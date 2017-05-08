@@ -1,0 +1,211 @@
+/* Empty. Add your own CSS if you like */
+.app-icon {
+    background-color: #fff;
+    background: url('../img/logo2.png') center;
+    background-size: cover;
+    height: 160px;
+    margin: auto;
+    width: 160px;
+}
+
+h1 {
+    color: white;
+    
+    font-size: 42px;
+	text-align: center;
+	
+	
+}
+
+h2 {
+    color: white;
+	text-align: center;
+	font-family:Palatino Linotype;
+	font-weight: bold;
+}
+
+button.btnsub{
+	border-radius:50px;
+}
+
+button.btn1 {
+		box-shadow: 0 12px 16px 0 #3e5277;
+		border-radius: 6px;
+	 }
+option{
+	background:#62b5e5;
+}
+.tabs,.tabs-striped{
+	background-color:transparent;
+	
+}
+
+.input-label {
+    color: #ffffff;
+
+     }
+
+button.btn2 {
+  display: inline-block;
+  padding: 0px 0px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: red;
+  background-color: transparent;
+  border: 0px solid #999;
+  border-radius: 75px;
+  box-shadow: 0 9px #999;
+}
+
+button.btn2:hover {
+background-color: #00bfff;
+}
+
+button.btn2:active {
+  box-shadow: 0 0px #666;
+  transform: translateY(4px);
+}
+
+
+.header .col {
+  background:transparent;
+}
+
+.col-30 {
+  font-size:14px;
+  color:orange;
+  font-family: 'Lato', sans-serif;
+  border-bottom:solid 1px orange;
+  
+}
+.rowhead{
+	background:blue;
+}
+
+.col-20,.col-40,.col-10{
+	height:50px;
+	text-align:center;
+	border-bottom: solid 1px white;
+  border-bottom-style: solid 1px white;
+  border-right-style: none;
+  font-size:10px;
+  color:white;
+  text-align:center;
+}
+.col-19,.col-39,.col-9{
+	height:50px;
+	text-align:center;
+	border-bottom: solid 1px orange;
+  border-bottom-style: solid 1px white;
+  border-right-style: none;
+  font-size:14px;
+  color:orange;
+  text-align:center;
+}
+.rw{
+	background:#2e4738;
+	font-size:24px;
+}
+.rwdata{
+
+}
+
+option{
+	background:#08160d;
+	font-size:14px;
+	color:white;
+}
+
+.left-inner-addon {<!--  ww w  . j  av  a 2  s .c o m-->
+  position: relative;
+}
+.comment-page{
+	background:transparent;
+}
+.ion-content{
+	background:transparent;
+}
+button.btn3 {
+  display: inline-block;
+  padding: 0px 0px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: red;
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 75px;
+}
+
+button.btn4{
+	background-color: #b76a05;  
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.475em;
+	border-radius: 15px 50px;
+	border: 1px solid white;
+}
+
+/*--------------student login--------------------------------------*/
+p.stl{
+	font-family: "Times New Roman", Times, serif;
+}
+.item{
+	background:transparent;
+	border-style:solid;
+	
+}
+button.stdlogin{
+	background-color: #1c61b5;  
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.000em;
+	width: 240px;
+    height: 13px; 		
+}
+button.stdreg{
+	background-color: red;  
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.000em;
+	width: 200px;
+    height: 0px;
+		
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+button.fblogin{
+	border-radius: 75px;
+}
+/*-------------student registation page-----------------------*/
+p.stl1{
+	font-family: "Times New Roman", Times, serif;
+	color:#420666;
+	font-variant: small-caps;
+	text-shadow: 2px 2px 8px white;
+	
+}
+
+

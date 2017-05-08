@@ -1,0 +1,57 @@
+<ion-pane style="background:#b05884; background-size: cover;"> 
+	
+<ion-view title="Signup" style="background: #b05884; background-size: cover;>
+<div class="spacer" style="height: 30px;"></div>
+  <ion-content padding="true" class="padding ">
+	<div class="animated flipInX" >
+		<div class="item item-divider">
+			<div class="item item-body">
+				<div class="bar bar-header bar-positive" style="background:transparent;">
+					   <h1 class="title" style="color:#ffcc5c"><b>COLLEGE REGISTER</b></h1>
+					   <hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		<div ng-cloak  class="w3-card-2 w3-margin" style="max-width:600px;">
+		  <h5 style="color:#fbeed0; text-align:center">Student Participation</h5>
+		  <ul class="w3-ul">
+			<li ng-repeat="x in products track by $index" style="color:white">Stream : {{x.stream}} &nbsp&nbsp Student : {{x.total}}<span ng-click="removekeyskill($index)" style="cursor:pointer;" class="w3-right w3-margin-right">x</span></li>
+		  </ul>
+		  
+			<div class="w3-row w3-margin-top">
+			  <div class="w3-col s5 ">
+				   <!--<input type="number" style="border-bottom:1px solid white" placeholder="Year" ng-model="edu.ten">-->
+				   <select  name="option" class="w3-select" ng-value="value" ng-model="data.mdeg" style="height:49px; width:135px">
+					<option value="" disabled selected>Stream</option>
+					<option value="BBA">BBA</option>
+					<option value="BCA">BCA</option>
+					<option value="CSE">CSE</option>
+					<option value="ECE">ECE</option>
+					<option value="EE">EE</option>
+					<option value="IT">IT</option>
+					<option value="MCA">MCA</option>
+					<option value="ME">ME</option>
+				   </select>
+			  </div>
+			  <div class="w3-col s5">
+				<input placeholder="Add no. of students" ng-model="data.addstu" class="w3-input w3-border" style="height:50px">
+			  </div>
+			  <div class="w3-col s2">
+				<button ng-click="addstudent(data)" class="w3-btn w3-teal" style="height:50px">Add</button>
+			  </div>
+			</div>
+			<p class="w3-text-red">{{errortext}}</p>
+		</div>  
+		
+	
+	<!--		//data object is passed to the signup()				-->
+		<div class="spacer" style="height: 20px;"></div>
+        <button ng-click="clgfinish()" class="w3-button w3-pale-red w3-round-xlarge button-block" style="font-weight:bold; font-size:16px">Next</button>
+    </ion-content>
+	</ion-view>
+
+	
+
+</ion-pane>

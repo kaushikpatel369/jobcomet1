@@ -1,0 +1,429 @@
+<ion-pane style="background:#005555; background-size: cover;"> 
+	
+<ion-view title="Signup" style="background: #005555; background-size: cover;>
+<div class="spacer" style="height: 30px;"></div>
+  <ion-content padding="true" class="padding ">
+	<div class="animated flipInX" >
+		<div class="item item-divider">
+			<div class="item item-body">
+				<div class="bar bar-header bar-positive" style="background:transparent;">
+					   <h1 class="title" style="color:#ffcc5c"><b>EDUCATIONAL DETAILS</b></h1>
+					   <hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="w3-card-4 w3-margin" style="max-width:600px;">
+	<form class="list"> 
+		<h5 style="color:#ffeead; text-align:center">School Details</h5>
+		<div class="row">
+			<div class="col col-50">
+                <label class="item item-input">
+				   <span class="input-label">10th</span>
+				   <input type="number" style="border-bottom:1px solid white" placeholder="Year" ng-model="edu.ten">
+				</label>
+			</div>
+			<div class="col col-50">
+				<label class="item item-input">
+				   <input type="number" style="border-bottom:1px solid white" placeholder="Marks" ng-model="edu.tenmark">
+				   <span class="input-label">%</span>
+				</label>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col col-50">
+                <label class="item item-input">
+				   <span class="input-label">12th</span>
+				   <input type="number" style="border-bottom:1px solid white" placeholder="Year" ng-model="edu.twelve">
+				</label>
+			</div>
+			<div class="col col-50">
+				<label class="item item-input">
+				   <input type="number" style="border-bottom:1px solid white" placeholder="Marks" ng-model="edu.twelvemark">
+				   <span class="input-label">%</span>
+				</label>
+			</div>
+		</div>
+	</form>
+	</div>
+	<div class="w3-card-4 w3-margin" style="max-width:600px;">
+		<h5 style="color:#ffeead; text-align:center">Graduation Details</h5>
+		<form class="list"> 
+				<div class="row">
+			<div class="col col-100">
+			<span class="input-label">College</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-100">
+				<label class="item item-input">
+
+				   <select  name="option"  ng-value="value" ng-model="edu.gclg">
+						<option value="" disabled selected>---</option>
+						<option value="Abacus Institute of Engineering and Management. (AIEM)">Abacus Institute of Engineering and Management. (AIEM)</option>
+						<option value="Academy Of Technology. (AOT)">Academy Of Technology. (AOT)</option>
+						<option value="Adamas Institute Of Technology. (AIT)">Adamas Institute Of Technology. (AIT)</option>
+						<option value="Aliah University">Aliah University</option>
+						<option value="Aryabhatta Institute Of Engineering And Management">Aryabhatta Institute Of Engineering And Management</option>
+						<option value="Asansol Engineering College">Asansol Engineering College</option>
+						
+						<option value="B.P. Poddar Institute of Management And Technology. (BPPIMT)">B.P. Poddar Institute of Management And Technology. (BPPIMT)</option>
+						<option value="Bankura Unnayani Institute of Engineering">Bankura Unnayani Institute of Engineering</option>
+						<option value="Batanagar Institute of Engineering, Management And Science. (BIEMS)">Batanagar Institute of Engineering, Management And Science. (BIEMS)</option>
+						<option value="Bengal College of Engineering and Technology">Bengal College of Engineering and Technology</option>
+						<option value="Bengal College Of Engineering College And Technology For Women. (BCECTW)">Bengal College Of Engineering College And Technology For Women. (BCECTW)</option>
+						<option value="Bengal Institute of Technology and Management (BITM)">Bengal Institute of Technology and Management (BITM)</option>
+						<option value="Bengal Institute of Technology(BIT)">Bengal Institute of Technology(BIT)</option>
+						<option value="Birbhum Institute of Engineering & Technology">Birbhum Institute of Engineering & Technology</option>
+						<option value="Brainware Group Of Institutions">Brainware Group Of Institutions</option>
+						<option value="Budge Budge Institute Of Technology. (BBIT)">Budge Budge Institute Of Technology. (BBIT)</option>
+						<option value="Burdwan University">Burdwan University</option>
+						
+						<option value="Calcutta Institute Of Engineering and Management">Calcutta Institute Of Engineering and Management</option>
+						<option value="Calcutta University">Calcutta University</option>
+						<option value="Calcutta Institute Of Technology. (CIT)">Calcutta Institute Of Technology. (CIT)</option>
+						<option value="Camellia Institute Of Engineeing and Technology">Camellia Institute Of Engineeing and Technology</option>
+						<option value="Camellia Institute Of Technology and Management">Camellia Institute Of Technology and Management</option>
+						<option value="Camellia Institute of Technology. (CIT)">Camellia Institute of Technology. (CIT)</option>
+						<option value="Camellia School Of Engineering And Technology. (CSET)">Camellia School Of Engineering And Technology. (CSET)</option>
+						<option value="College of Engineering and Management, Kolaghat">College of Engineering and Management, Kolaghat</option>
+						<option value="Cooch Behar Government Engineering College">Cooch Behar Government Engineering College</option>
+						
+						<option value="Dr. B.C. Roy Engineering College">Dr. B.C. Roy Engineering College</option>
+						<option value="Dr. Sudhir Chandra Sur Degree Engineering College. (DR.SCSDEC)">Dr. Sudhir Chandra Sur Degree Engineering College. (DR.SCSDEC)</option>
+						<option value="Dream Institute Of Technology. (DIT)">Dream Institute Of Technology. (DIT)</option>
+						<option value="DSMS Business School">DSMS Business School</option>
+						<option value="Dumkal Institute of Engineering And Technology. (DIEAT)">Dumkal Institute of Engineering And Technology. (DIEAT)</option>
+						<option value="Durgapur Institute of Advanced Technology & Management">Durgapur Institute of Advanced Technology & Management</option>
+						<option value="Elitte Institute of Engineering & Management">Elitte Institute of Engineering & Management</option>
+						<option value="Faculty of Technology (Uttar Banga Krishi Vishwavidyala)">Faculty of Technology (Uttar Banga Krishi Vishwavidyala)</option>
+						<option value="Future Institute of engineering And Management. (FIEM)">Future Institute of engineering And Management. (FIEM)</option>
+							<option value="Future Institute of Technology">Future Institute of Technology</option>
+						<option value="Gargi Memorial Institute of Technology. (GMIT)">Gargi Memorial Institute of Technology. (GMIT)</option>
+						<option value="Global Institute Of Management And Technology. (GIMT)">Global Institute Of Management And Technology. (GIMT)</option>
+						<option value="Government College of Engineering And Ceramic Technology. (GCECT)">Government College of Engineering And Ceramic Technology. (GCECT)</option>
+						<option value="Govt. College of Engineering And Textile Technology Berhampore. (GCETTB)">Govt. College of Engineering And Textile Technology Berhampore. (GCETTB)</option>
+						<option value="Govt. College of Engineering And Textile Technology, Serampore. (GCETTS)">Govt. College of Engineering And Textile Technology, Serampore. (GCETTS)</option>
+						<option value="Greater Kolkata College of Engineering And Management. (GKCEM)">Greater Kolkata College of Engineering And Management. (GKCEM)</option>
+						<option value="Guru Nanak Institute Of Technology. (GNIT)">Guru Nanak Institute Of Technology. (GNIT)</option>
+						
+						<option value="Haldia Institute Of Technology">Haldia Institute Of Technology</option>
+						<option value="Hemnalini Memorial College of Engineering">Hemnalini Memorial College of Engineering</option>
+						<option value="Heritage Institute of Technology. (HIT)">Heritage Institute of Technology. (HIT)</option>
+						<option value="Hooghly Engineering And Technology College. (HEATC)">Hooghly Engineering And Technology College. (HEATC)</option>
+						<option value="Ideal Institute of Engineering. (IIE)">Ideal Institute of Engineering. (IIE)</option>
+						<option value="Iercem Institute of Information Technology. (IIIT)">Iercem Institute of Information Technology. (IIIT)</option>
+						<option value="IMPS College of Engineering And Technology. (IMPSCEAT)">IMPS College of Engineering And Technology. (IMPSCEAT)</option>
+						<option value="Indian Institute of Engineering Science and Technology, Shibpur">Indian Institute of Engineering Science and Technology, Shibpur</option>
+						<option value="Institute of Engineering And Management. (IEM)">Institute of Engineering And Management. (IEM)</option>
+						<option value="Institute Of Science And Technology. (ISAT)">Institute Of Science And Technology. (ISAT)</option>
+						<option value="Jadavpur University">Jadavpur University</option>
+						<option value="Jalpaiguri Government Engineering College. (JGEC)">Jalpaiguri Government Engineering College. (JGEC)</option>
+							<option value="JIS College of Engineering. (JISCE)">JIS College of Engineering. (JISCE)</option>
+						<option value="Jld Engineering and Management College">Jld Engineering and Management College</option>
+						<option value="Kalyani Govt. Engineering College">Kalyani Govt. Engineering College</option>
+						<option value="Kanad Institute Of Engineering And Management Mankar, Durgapur. (KIEAMMD)">Kanad Institute Of Engineering And Management Mankar, Durgapur. (KIEAMMD)</option>
+						<option value="Kanksa Academy Of Technology And Management. ( KATAM)">Kanksa Academy Of Technology And Management. ( KATAM)</option>
+						<option value="Malabhum Institute of Technology">Malabhum Institute of Technology</option>
+						<option value="MCKV Institute Of Engineering. (MCKVIE)">MCKV Institute Of Engineering. (MCKVIE)</option>
+						<option value="Meghnad Saha Institute of Technology. (MSIT)">Meghnad Saha Institute of Technology. (MSIT)</option>
+						<option value="Modern Institute Of Engineering And Technology. (MIET)">Modern Institute Of Engineering And Technology. (MIET)</option>
+						<option value="Murshidbad College of Engineering And Technology. (MCET)">Murshidbad College of Engineering And Technology. (MCET)</option>
+						<option value="Narula Institute of Technology. (NIT)">Narula Institute of Technology. (NIT)</option>
+						<option value="National Institute of Technology">National Institute of Technology</option>
+							<option value="National Institute of Technology, Durgapur">National Institute of Technology, Durgapur</option>
+						<option value="National Power Training Institute (ER)">National Power Training Institute (ER)</option>
+						<option value="Neotia Institute of Technology Management And Science. (NITMS)">Neotia Institute of Technology Management And Science. (NITMS)</option>
+						<option value="NSHM Knowledge campus, Durgapur - Group of Institutions">NSHM Knowledge campus, Durgapur - Group of Institutions</option>
+						<option value="Netaji Subhash Engineering College (NSEC)">Netaji Subhash Engineering College (NSEC)</option>
+						<option value="OmDayal Group Of Institution. (ODGI)">OmDayal Group Of Institution. (ODGI)</option>
+						<option value="others">Others</option>
+						<option value="Pailan College of Management And Technology">Pailan College of Management And Technology</option>
+						<option value="Purulia Government Engineering College">Purulia Government Engineering College</option>
+						<option value="Rcc Institute of Information Technology. (RCCIIT)">Rcc Institute of Information Technology. (RCCIIT)</option>
+						<option value="Regent Education & Research Foundation Group Of Institutions">Regent Education & Research Foundation Group Of Institutions</option>
+						<option value="Sanaka Educational Trust's Group of Institutions">Sanaka Educational Trust's Group of Institutions</option>
+						<option value="Saroj Mohan Institute Of Technology. ( SMIT)">Saroj Mohan Institute Of Technology. ( SMIT)</option>
+						
+						<option value="Seacom Engineering College. (SEC)">Seacom Engineering College. (SEC)</option>
+						<option value="Siliguri Institute Of Technology">Siliguri Institute Of Technology</option>
+						<option value="St. Mary’s Technical Campus, Kolkata">St. Mary’s Technical Campus, Kolkata</option>
+						<option value="St. Thomas' College of Engineering And Technology. (STTCET)">St. Thomas' College of Engineering And Technology. (STTCET)</option>
+						<option value="Surendra Institute of Engineering And Management. (SIEM)">Surendra Institute of Engineering And Management. (SIEM)</option>
+						<option value="Swami Vivekananda Institute of Science And Technology. (SVISAT)">Swami Vivekananda Institute of Science And Technology. (SVISAT)</option>
+						<option value="Techno Global - Balurghat. (TGB)">Techno Global - Balurghat. (TGB)</option>
+						<option value="Techno India Banipur">Techno India Banipur</option>
+						<option value="Techno India Batanagar">Techno India Batanagar</option>
+						<option value="Techno India Durgapur">Techno India Durgapur</option>
+						<option value="Techno India Saltlake">Techno India Saltlake</option>
+						<option value="Techno India College of Technology. (TICT)">Techno India College of Technology. (TICT)</option>
+						<option value="Techno India Hooghly">Techno India Hooghly</option>
+						<option value="University College Of Science & Technology">University College Of Science & Technology</option>
+						<option value="University Of Engineering and Management, Kolkata(UEM)">University Of Engineering and Management, Kolkata(UEM)</option>
+						<option value="University of Kalyani">University of Kalyani</option>
+						<option value="Vidyasagar University">Vidyasagar University</option>
+						
+				   </select>
+				   
+				</label>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="col col-50">
+                <label class="item item-input">
+				   <span class="input-label">Degree</span>
+				   <!--<input type="number" style="border-bottom:1px solid white" placeholder="Year" ng-model="edu.ten">-->
+				   <select  name="option"  ng-value="value" ng-model="edu.gdeg">
+					<option value="" disabled selected>---</option>
+					<option value="B.Sc">B.Sc</option>
+					<option value="BCA">BCA</option>
+					<option value="BBA">BBA</option>
+					<option value="B.Com">B.Com</option>
+					<option value="BA">BA</option>
+					<option value="B.Tech">B.Tech</option>
+				   </select>
+				</label>
+			</div>
+			<div class="col col-50">
+				<label class="item item-input">
+				   <input type="text" style="border-bottom:1px solid white" placeholder="Stream" ng-model="edu.gstream">
+				</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col-50">
+                <label class="item item-input">
+				   <span class="input-label"t>Pass Out</span>
+				   <input type="number" style="border-bottom:1px solid white" placeholder="Year" ng-model="edu.gyear">
+				</label>
+			</div>
+			<div class="col col-50">
+				<label class="item item-input">
+				   <input type="number" style="border-bottom:1px solid white" placeholder="Marks" ng-model="edu.gmark">
+				   <span class="input-label">%</span>
+				</label>
+			</div>
+		</div>
+		
+		</form>
+	</div>
+	
+		<div class="w3-card-4 w3-margin" style="max-width:600px;">
+		<h5 style="color:#ffeead; text-align:center">Post Graduation Details</h5>
+		<form class="list">
+		
+		<div class="row">
+			<div class="col col-100">
+			<span class="input-label">College</span>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col col-100">
+				<label class="item item-input">
+				
+				   <select  name="option"  ng-value="value" ng-model="edu.mclg">
+						<option value="" disabled selected>---</option>
+						<option value="Abacus Institute of Engineering and Management. (AIEM)">Abacus Institute of Engineering and Management. (AIEM)</option>
+						<option value="Academy Of Technology. (AOT)">Academy Of Technology. (AOT)</option>
+						<option value="Adamas Institute Of Technology. (AIT)">Adamas Institute Of Technology. (AIT)</option>
+						<option value="Aliah University">Aliah University</option>
+						<option value="Aryabhatta Institute Of Engineering And Management">Aryabhatta Institute Of Engineering And Management</option>
+						<option value="Asansol Engineering College">Asansol Engineering College</option>
+						
+						<option value="B.P. Poddar Institute of Management And Technology. (BPPIMT)">B.P. Poddar Institute of Management And Technology. (BPPIMT)</option>
+						<option value="Bankura Unnayani Institute of Engineering">Bankura Unnayani Institute of Engineering</option>
+						<option value="Batanagar Institute of Engineering, Management And Science. (BIEMS)">Batanagar Institute of Engineering, Management And Science. (BIEMS)</option>
+						<option value="Bengal College of Engineering and Technology">Bengal College of Engineering and Technology</option>
+						<option value="Bengal College Of Engineering College And Technology For Women. (BCECTW)">Bengal College Of Engineering College And Technology For Women. (BCECTW)</option>
+						<option value="Bengal Institute of Technology and Management (BITM)">Bengal Institute of Technology and Management (BITM)</option>
+						<option value="Bengal Institute of Technology(BIT)">Bengal Institute of Technology(BIT)</option>
+						<option value="Birbhum Institute of Engineering & Technology">Birbhum Institute of Engineering & Technology</option>
+						<option value="Brainware Group Of Institutions">Brainware Group Of Institutions</option>
+						<option value="Budge Budge Institute Of Technology. (BBIT)">Budge Budge Institute Of Technology. (BBIT)</option>
+						<option value="Burdwan University">Burdwan University</option>
+						
+						<option value="Calcutta Institute Of Engineering and Management">Calcutta Institute Of Engineering and Management</option>
+						<option value="Calcutta University">Calcutta University</option>
+						<option value="Calcutta Institute Of Technology. (CIT)">Calcutta Institute Of Technology. (CIT)</option>
+						<option value="Camellia Institute Of Engineeing and Technology">Camellia Institute Of Engineeing and Technology</option>
+						<option value="Camellia Institute Of Technology and Management">Camellia Institute Of Technology and Management</option>
+						<option value="Camellia Institute of Technology. (CIT)">Camellia Institute of Technology. (CIT)</option>
+						<option value="Camellia School Of Engineering And Technology. (CSET)">Camellia School Of Engineering And Technology. (CSET)</option>
+						<option value="College of Engineering and Management, Kolaghat">College of Engineering and Management, Kolaghat</option>
+						<option value="Cooch Behar Government Engineering College">Cooch Behar Government Engineering College</option>
+						
+						<option value="Dr. B.C. Roy Engineering College">Dr. B.C. Roy Engineering College</option>
+						<option value="Dr. Sudhir Chandra Sur Degree Engineering College. (DR.SCSDEC)">Dr. Sudhir Chandra Sur Degree Engineering College. (DR.SCSDEC)</option>
+						<option value="Dream Institute Of Technology. (DIT)">Dream Institute Of Technology. (DIT)</option>
+						<option value="DSMS Business School">DSMS Business School</option>
+						<option value="Dumkal Institute of Engineering And Technology. (DIEAT)">Dumkal Institute of Engineering And Technology. (DIEAT)</option>
+						<option value="Durgapur Institute of Advanced Technology & Management">Durgapur Institute of Advanced Technology & Management</option>
+						<option value="Elitte Institute of Engineering & Management">Elitte Institute of Engineering & Management</option>
+						<option value="Faculty of Technology (Uttar Banga Krishi Vishwavidyala)">Faculty of Technology (Uttar Banga Krishi Vishwavidyala)</option>
+						<option value="Future Institute of engineering And Management. (FIEM)">Future Institute of engineering And Management. (FIEM)</option>
+							<option value="Future Institute of Technology">Future Institute of Technology</option>
+						<option value="Gargi Memorial Institute of Technology. (GMIT)">Gargi Memorial Institute of Technology. (GMIT)</option>
+						<option value="Global Institute Of Management And Technology. (GIMT)">Global Institute Of Management And Technology. (GIMT)</option>
+						<option value="Government College of Engineering And Ceramic Technology. (GCECT)">Government College of Engineering And Ceramic Technology. (GCECT)</option>
+						<option value="Govt. College of Engineering And Textile Technology Berhampore. (GCETTB)">Govt. College of Engineering And Textile Technology Berhampore. (GCETTB)</option>
+						<option value="Govt. College of Engineering And Textile Technology, Serampore. (GCETTS)">Govt. College of Engineering And Textile Technology, Serampore. (GCETTS)</option>
+						<option value="Greater Kolkata College of Engineering And Management. (GKCEM)">Greater Kolkata College of Engineering And Management. (GKCEM)</option>
+						<option value="Guru Nanak Institute Of Technology. (GNIT)">Guru Nanak Institute Of Technology. (GNIT)</option>
+						
+						<option value="Haldia Institute Of Technology">Haldia Institute Of Technology</option>
+						<option value="Hemnalini Memorial College of Engineering">Hemnalini Memorial College of Engineering</option>
+						<option value="Heritage Institute of Technology. (HIT)">Heritage Institute of Technology. (HIT)</option>
+						<option value="Hooghly Engineering And Technology College. (HEATC)">Hooghly Engineering And Technology College. (HEATC)</option>
+						<option value="Ideal Institute of Engineering. (IIE)">Ideal Institute of Engineering. (IIE)</option>
+						<option value="Iercem Institute of Information Technology. (IIIT)">Iercem Institute of Information Technology. (IIIT)</option>
+						<option value="IMPS College of Engineering And Technology. (IMPSCEAT)">IMPS College of Engineering And Technology. (IMPSCEAT)</option>
+						<option value="Indian Institute of Engineering Science and Technology, Shibpur">Indian Institute of Engineering Science and Technology, Shibpur</option>
+						<option value="Institute of Engineering And Management. (IEM)">Institute of Engineering And Management. (IEM)</option>
+						<option value="Institute Of Science And Technology. (ISAT)">Institute Of Science And Technology. (ISAT)</option>
+						<option value="Jadavpur University">Jadavpur University</option>
+						<option value="Jalpaiguri Government Engineering College. (JGEC)">Jalpaiguri Government Engineering College. (JGEC)</option>
+							<option value="JIS College of Engineering. (JISCE)">JIS College of Engineering. (JISCE)</option>
+						<option value="Jld Engineering and Management College">Jld Engineering and Management College</option>
+						<option value="Kalyani Govt. Engineering College">Kalyani Govt. Engineering College</option>
+						<option value="Kanad Institute Of Engineering And Management Mankar, Durgapur. (KIEAMMD)">Kanad Institute Of Engineering And Management Mankar, Durgapur. (KIEAMMD)</option>
+						<option value="Kanksa Academy Of Technology And Management. ( KATAM)">Kanksa Academy Of Technology And Management. ( KATAM)</option>
+						<option value="Malabhum Institute of Technology">Malabhum Institute of Technology</option>
+						<option value="MCKV Institute Of Engineering. (MCKVIE)">MCKV Institute Of Engineering. (MCKVIE)</option>
+						<option value="Meghnad Saha Institute of Technology. (MSIT)">Meghnad Saha Institute of Technology. (MSIT)</option>
+						<option value="Modern Institute Of Engineering And Technology. (MIET)">Modern Institute Of Engineering And Technology. (MIET)</option>
+						<option value="Murshidbad College of Engineering And Technology. (MCET)">Murshidbad College of Engineering And Technology. (MCET)</option>
+						<option value="Narula Institute of Technology. (NIT)">Narula Institute of Technology. (NIT)</option>
+						<option value="National Institute of Technology">National Institute of Technology</option>
+							<option value="National Institute of Technology, Durgapur">National Institute of Technology, Durgapur</option>
+						<option value="National Power Training Institute (ER)">National Power Training Institute (ER)</option>
+						<option value="Neotia Institute of Technology Management And Science. (NITMS)">Neotia Institute of Technology Management And Science. (NITMS)</option>
+						<option value="NSHM Knowledge campus, Durgapur - Group of Institutions">NSHM Knowledge campus, Durgapur - Group of Institutions</option>
+						<option value="Netaji Subhash Engineering College (NSEC)">Netaji Subhash Engineering College (NSEC)</option>
+						<option value="OmDayal Group Of Institution. (ODGI)">OmDayal Group Of Institution. (ODGI)</option>
+						<option value="others">Others</option>
+						<option value="Pailan College of Management And Technology">Pailan College of Management And Technology</option>
+						<option value="Purulia Government Engineering College">Purulia Government Engineering College</option>
+						<option value="Rcc Institute of Information Technology. (RCCIIT)">Rcc Institute of Information Technology. (RCCIIT)</option>
+						<option value="Regent Education & Research Foundation Group Of Institutions">Regent Education & Research Foundation Group Of Institutions</option>
+						<option value="Sanaka Educational Trust's Group of Institutions">Sanaka Educational Trust's Group of Institutions</option>
+						<option value="Saroj Mohan Institute Of Technology. ( SMIT)">Saroj Mohan Institute Of Technology. ( SMIT)</option>
+						
+						<option value="Seacom Engineering College. (SEC)">Seacom Engineering College. (SEC)</option>
+						<option value="Siliguri Institute Of Technology">Siliguri Institute Of Technology</option>
+						<option value="St. Mary’s Technical Campus, Kolkata">St. Mary’s Technical Campus, Kolkata</option>
+						<option value="St. Thomas' College of Engineering And Technology. (STTCET)">St. Thomas' College of Engineering And Technology. (STTCET)</option>
+						<option value="Surendra Institute of Engineering And Management. (SIEM)">Surendra Institute of Engineering And Management. (SIEM)</option>
+						<option value="Swami Vivekananda Institute of Science And Technology. (SVISAT)">Swami Vivekananda Institute of Science And Technology. (SVISAT)</option>
+						<option value="Techno Global - Balurghat. (TGB)">Techno Global - Balurghat. (TGB)</option>
+						<option value="Techno India Banipur">Techno India Banipur</option>
+						<option value="Techno India Batanagar">Techno India Batanagar</option>
+						<option value="Techno India Durgapur">Techno India Durgapur</option>
+						<option value="Techno India Saltlake">Techno India Saltlake</option>
+						<option value="Techno India College of Technology. (TICT)">Techno India College of Technology. (TICT)</option>
+						<option value="Techno India Hooghly">Techno India Hooghly</option>
+						<option value="University College Of Science & Technology">University College Of Science & Technology</option>
+						<option value="University Of Engineering and Management, Kolkata(UEM)">University Of Engineering and Management, Kolkata(UEM)</option>
+						<option value="University of Kalyani">University of Kalyani</option>
+						<option value="Vidyasagar University">Vidyasagar University</option>
+						
+				   </select>
+				   
+				</label>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col col-50">
+                <label class="item item-input">--
+				   <span class="input-label">Degree</span>
+				   <!--<input type="number" style="border-bottom:1px solid white" placeholder="Year" ng-model="edu.ten">-->
+				   <select  name="option"  ng-value="value" ng-model="edu.mdeg">
+					<option value="" disabled selected>---</option>
+					<option value="M.Sc">M.Sc</option>
+					<option value="MCA">MCA</option>
+					<option value="MBA">MBA</option>
+					<option value="M.Com">M.Com</option>
+					<option value="MA">MA</option>
+					<option value="M.Tech">M.Tech</option>
+				   </select>
+				</label>
+			</div>
+			<div class="col col-50">
+				<label class="item item-input">
+				   <input type="text" style="border-bottom:1px solid white" placeholder="Stream" ng-model="edu.mstream">
+				</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col-50">
+                <label class="item item-input">
+				   <span class="input-label">Pass Out</span>
+				   <input type="number" style="border-bottom:1px solid white" placeholder="Year" ng-model="edu.myear">
+				</label>
+			</div>
+			<div class="col col-50">
+				<label class="item item-input">
+				   <input type="number" style="border-bottom:1px solid white" placeholder="Marks" ng-model="edu.mmark">
+				   <span class="input-label">%</span>
+				</label>
+			</div>
+		</div>
+		
+		</form>
+	</div>
+	
+<div class="w3-card-4 w3-margin" style="max-width:600px;">
+		<h5 style="color:#ffeead; text-align:center">Industrial Details</h5>
+		<form class="list"> 
+		<div class="row">
+			<div class="col col-100">
+                <label class="item item-input">
+				   <span class="input-label">Worked For</span>
+				   <input type="text" style="border-bottom:1px solid white" placeholder="Company Name" ng-model="edu.cname">
+				</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col-100">
+                <label class="item item-input">
+				   <span class="input-label">Job Role</span>
+				   <input type="text" style="border-bottom:1px solid white" placeholder="eg. Developer" ng-model="edu.cjobrole">
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-50">
+				<label class="item item-input">
+				   <span class="input-label">Domain</span>
+				   <input type="text" style="border-bottom:1px solid white" placeholder="eg. Ionic" ng-model="edu.cdomain">  
+				</label>
+			</div>
+			<div class="col col-50">
+				<label class="item item-input">
+				   <span class="input-label">Duration</span>
+				   <input type="number" style="border-bottom:1px solid white" placeholder="year" ng-model="edu.cduration">  
+				</label>
+			</div>
+		</div>
+		
+		</form>
+	</div>
+			
+	<!--		//data object is passed to the signup()				-->
+		<div class="spacer" style="height: 20px;"></div>
+            <button ng-click="finish(edu)" class="w3-button w3-pale-red w3-round-xlarge button-block" style="font-weight:bold; font-size:16px">Finish</button>
+      
+    </ion-content>
+	</ion-view>
+
+	
+
+</ion-pane>

@@ -1,0 +1,113 @@
+<ion-pane style="background:#b05884; background-size: cover;"> 
+	
+<ion-view title="Signup" style="background: #b05884; background-size: cover;>
+<div class="spacer" style="height: 30px;"></div>
+  <ion-content padding="true" class="padding ">
+	<div class="animated flipInX" >
+		<div class="item item-divider">
+			<div class="item item-body">
+				<div class="bar bar-header bar-positive" style="background:transparent;">
+					   <h1 class="title" style="color:#ffcc5c"><b>COMPANY REGISTER</b></h1>
+					   <hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		<div ng-cloak  class="w3-card-4 w3-margin" style="max-width:600px;">
+		  <h5 style="color:#fbeed0; text-align:center; font-size:16px">Job Domains</h5>
+		  <ul class="w3-ul">
+			<li ng-repeat="x in products track by $index" style="color:white"> {{x}}<span ng-click="removekeyskill($index)" style="cursor:pointer;" class="w3-right w3-margin-right">x</span></li>
+		  </ul>
+		  
+			<div class="w3-row w3-margin-top">
+			  <div class="w3-col s10 ">
+				   <!--<input type="number" style="border-bottom:1px solid white" placeholder="Year" ng-model="edu.ten">-->
+				   <select  name="option" class="w3-select" ng-value="value" ng-model="jobdomain" style="height:49px;">
+					<option value="" disabled selected>Add domains</option>
+					<option value="Software Development">Software Development</option>
+					<option value="App Development">App Development</option>
+					<option value="Web Development">Web Development</option>
+					<option value="Software Testing">Software Testing</option>
+					<option value="Data Analytics">Data Analytics</option>
+					<option value="Digital Marketing">Digital Marketing</option>
+					<option value="IT Networking">IT Networking</option>
+					<option value="Sales">Sales</option>
+					<option value="Marketing">Marketing</option>
+					<option value="Finance">Finance</option>
+					<option value="Accounts">Accounts</option>
+					<option value="Civil">Civil</option>
+					<option value="Electrical">Electrical</option>
+					<option value="System Engineer">System Engineer</option>
+					<option value="Assistant System Engineer">Assistant System Engineer</option>
+				   </select>
+			  </div>
+			  <div class="w3-col s2">
+				<button ng-click="adddomain(jobdomain)" class="w3-btn w3-teal" style="height:50px">Add</button>
+			  </div>
+			</div>
+			
+			<div class="w3-row w3-margin-top">
+				<div class="w3-col s10">
+					<input placeholder="Add other job domains" ng-model="jobdomain2" class="w3-input w3-border" style="height:50px">
+				</div>
+				<div class="w3-col s2">
+				<button ng-click="adddomain(jobdomain2)" class="w3-btn w3-teal" style="height:50px">Add</button>
+			  </div>
+			 </div>
+			<br>
+			<p class="w3-text-yellow">{{errortext}}</p>
+		</div>  
+		
+		<div class="spacer" style="height: 20px;"></div>
+		
+		<div ng-cloak  class="w3-card-4 w3-margin" style="max-width:600px;">
+		  <h5 style="color:#fbeed0; text-align:center; font-size:16px">Technologies</h5>
+		  <ul class="w3-ul">
+			<li ng-repeat="x in products2 track by $index" style="color:white"> {{x}}<span ng-click="removetech($index)" style="cursor:pointer;" class="w3-right w3-margin-right">x</span></li>
+		  </ul>
+		  
+			<div class="w3-row w3-margin-top">
+			  <div class="w3-col s10 ">
+				   <!--<input type="number" style="border-bottom:1px solid white" placeholder="Year" ng-model="edu.ten">-->
+				   <select  name="option" class="w3-select" ng-value="value" ng-model="tech" style="height:49px;">
+					<option value="" disabled selected>Add technologies</option>
+					<option value="Java">Java</option>
+					<option value="C">C</option>
+					<option value="C++">C++</option>
+					<option value="Hadoop">Hadoop</option>
+					<option value="PHP">PHP</option>
+					<option value="Oracle">Oracle</option>
+					<option value=".NET">.NET</option>
+					<option value="JavaScript">JavaScript</option>
+					<option value="UI & UX">UI & UX</option>
+					<option value="Android/IOS">Android/IOS</option>
+				   </select>
+			  </div>
+			  <div class="w3-col s2">
+				<button ng-click="addtech(tech)" class="w3-btn w3-teal" style="height:50px">Add</button>
+			  </div>
+			</div>
+			
+			<div class="w3-row w3-margin-top">
+				<div class="w3-col s10">
+					<input placeholder="Add other technologies" ng-model="tech2" class="w3-input w3-border" style="height:50px">
+				</div>
+				<div class="w3-col s2">
+				<button ng-click="addtech(tech2)" class="w3-btn w3-teal" style="height:50px">Add</button>
+			  </div>
+			 </div>
+			<br>
+			<p class="w3-text-yellow">{{errortext2}}</p>
+		</div>  
+		
+	
+	<!--		//data object is passed to the signup()				-->
+		<div class="spacer" style="height: 20px;"></div>
+        <button ng-click="cmpfinish()" class="w3-button w3-pale-red w3-round-xlarge button-block" style="font-weight:bold; font-size:16px">Next</button>
+    </ion-content>
+	</ion-view>
+
+	
+
+</ion-pane>

@@ -1,0 +1,123 @@
+<ion-pane style="background:#2f4c7a; background-size: cover;"> 
+	
+<ion-view title="Signup" style="background: #2f4c7a; background-size: cover;>
+<div class="spacer" style="height: 30px;"></div>
+  <ion-content padding="true" class="padding ">
+	<div class="animated flipInX" >
+		<div class="item item-divider">
+			<div class="item item-body">
+				<div class="bar bar-header bar-positive" style="background:transparent;">
+					   <h1 class="title" style="color:#ffcc5c"><b>GENERAL DETAILS</b></h1>
+					   <hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="spacer" style="height: 10px;"></div>		
+		
+		<div ng-cloak  class="w3-card-4 w3-margin" style="max-width:600px;">
+		  <h5 style="color:#B4EEB4; margin:none;">Key Skill</h5>
+		  <ul class="w3-ul">
+			<li ng-repeat="x in products" style="color:white">{{x}}<span ng-click="removekeyskill($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
+		  </ul>
+		  <div class=" w3-light-grey ">
+			<div class="w3-row w3-margin-top">
+			  <div class="w3-col s10">
+				<input placeholder="Add your key skill" ng-model="dad.addMe" class="w3-input ">
+			  </div>
+			  <div class="w3-col s2">
+				<button ng-click="addItem(dad.addMe)" class="w3-btn w3-green">Add</button>
+			  </div>
+			</div>
+			<p class="w3-text-red">{{errortext}}</p>
+		  </div>  
+		</div>
+	
+		<!----------------------------------------------------------------------------------------------------------------->
+		
+		<div ng-cloak  class="w3-card-4 w3-margin" style="max-width:600px;">
+		  <h5 style="color:#B4EEB4; margin:none;">Personal Skill</h5>
+		  <ul class="w3-ul">
+			<li ng-repeat="x in products2" style="color:white">{{x}}<span ng-click="removepskill($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
+		  </ul>
+		  <div class=" w3-light-grey ">
+			<div class="w3-row w3-margin-top">
+			  <div class="w3-col s10">
+				<input placeholder="Add your Personal skill" ng-model="dad.ps" class="w3-input ">
+			  </div>
+			  <div class="w3-col s2">
+				<button ng-click="pskill(dad.ps)" class="w3-btn w3-green">Add</button>
+			  </div>
+			</div>
+			<p class="w3-text-red">{{errortext}}</p>
+		  </div>  
+		</div>
+		
+		<!----------------------------------------------------------------------------->
+		
+		<div ng-cloak  class="w3-card-4 w3-margin" style="max-width:600px;">
+		  <h5 style="color:#B4EEB4; margin:none;">Area Of Interest</h5>
+		  <ul class="w3-ul">
+			<li ng-repeat="x in products3" style="color:white">{{x}}<span ng-click="removeaoi($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
+		  </ul>
+		  <div class=" w3-light-grey ">
+			<div class="w3-row w3-margin-top">
+			  <div class="w3-col s10">
+				<input placeholder="Add your Area Of Interest" ng-model="dad.aoi" class="w3-input ">
+			  </div>
+			  <div class="w3-col s2">
+				<button ng-click="addaoi(dad.aoi)" class="w3-btn w3-green">Add</button>
+			  </div>
+			</div>
+			<p class="w3-text-red">{{errortext}}</p>
+		  </div>  
+		</div>
+<!----------------------------------------------------------------------->
+		<div ng-cloak  class="w3-card-4 w3-margin" style="max-width:600px;">
+		  <h5 style="color:#B4EEB4; margin:none;">Hobbies</h5>
+		  <ul class="w3-ul">
+			<li ng-repeat="x in products4" style="color:white">{{x}}<span ng-click="removehoby($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
+		  </ul>
+		  <div class=" w3-light-grey ">
+			<div class="w3-row w3-margin-top">
+			  <div class="w3-col s10">
+				<input placeholder="Add your Hobbies" ng-model="dad.hoby" class="w3-input ">
+			  </div>
+			  <div class="w3-col s2">
+				<button ng-click="addhoby(dad.hoby)" class="w3-btn w3-green">Add</button>
+			  </div>
+			</div>
+			<p class="w3-text-red">{{errortext}}</p>
+		  </div>  
+		</div>
+<!------------------------------------------------------------------------------------------->
+		<div ng-cloak  class="w3-card-4 w3-margin" style="max-width:600px;">
+		  <h5 style="color:#B4EEB4; margin:none;">Languages Known</h5>
+		  <ul class="w3-ul">
+			<li ng-repeat="x in products5" style="color:white">{{x}}<span ng-click="removelang($index)" style="cursor:pointer;" class="w3-right w3-margin-right">×</span></li>
+		  </ul>
+		  <div class=" w3-light-grey ">
+			<div class="w3-row w3-margin-top">
+			  <div class="w3-col s10">
+				<input placeholder="Languages Known" ng-model="dad.lang" class="w3-input ">
+			  </div>
+			  <div class="w3-col s2">
+				<button ng-click="addlang(dad.lang)" class="w3-btn w3-green">Add</button>
+			  </div>
+			</div>
+			<p class="w3-text-red">{{errortext}}</p>
+		  </div>  
+		</div>
+
+			
+	<!--		//data object is passed to the signup()				-->
+		<div class="spacer" style="height: 20px;"></div>
+            <button ng-click="edudata(dad)" class="w3-button w3-pale-red w3-round-xlarge button-block" style="font-weight:bold; font-size:16px">Next</button>
+      
+    </ion-content>
+	</ion-view>
+
+	
+
+</ion-pane>

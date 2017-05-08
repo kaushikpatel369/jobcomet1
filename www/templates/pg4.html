@@ -1,0 +1,91 @@
+<ion-pane style="background:#2f4c7a; background-size: cover;"> 
+	
+	<ion-view title="Signup" style="background: #2f4c7a; background-size: cover;>
+	<div class="spacer" style="height: 30px;"></div>
+    <ion-content padding="true" class="padding ">
+	<div class="animated flipInX" >
+		<div class="item item-divider">
+			<div class="item item-body">
+				<div class="bar bar-header bar-positive" style="background:transparent;">
+					   <h1 class="title" style="color:#ffcc5c"><b>PERSONAL DETAILS</b></h1>
+					   <hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="spacer" style="height: 10px;"></div>
+        <form class="list">
+           
+                <label class="item item-input">
+				   <span class="input-label"t>Name</span>
+				   <input type="text" style="border-bottom:1px solid #009688" placeholder="Enter name" ng-model="data.name">
+				</label>
+
+				<label class="item item-input">
+				   <span class="input-label">Email</span>
+				   <input type="email" style="border-bottom:1px solid #009688" placeholder="Enter email" ng-model="data.email">
+				</label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" style="border-bottom:1px solid #009688" placeholder="Enter password" ng-model="data.password">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Phone</span>
+                    <input type="number" style="border-bottom:1px solid #009688" placeholder="Enter mobile no." ng-model="data.phone">
+                </label>
+         
+				<label class="item item-input">
+					<span class="input-label">Address</span>
+					<input type="text" style="border-bottom:1px solid #009688" placeholder="Enter address" ng-model="data.address">
+				</label>				
+				
+                  
+				<div class="item item-input-inset">
+					<label class="item item-input-wrapper">
+						<span class="input-label item-floating-label">DOB</span>
+						<input type="date" max="{{minAge | date:'yyyy-MM-dd'}}" style="border-bottom:1px solid #009688" placeholder="DOB" ng-model="data.dob" required/> 
+					</label>
+				</div>
+		    
+				<!--<label class="checkbox">
+					<span class="input-label">Sex</span>
+					<--<input type="text" style="border-bottom:1px solid #009688" placeholder="" ng-model="data.sex">
+					      <input type="checkbox" name="sex" value="male">Male<input type="checkbox" name="sex" value="female">Female
+				</label>-->
+				<label class="item item-input">
+					<span class="input-label">Nationality</span>
+					<input type="text" style="border-bottom:1px solid #009688" placeholder="Enter nationality" ng-model="data.nationality">
+				</label>
+				<br>
+				<form>
+					  <span style="color:white; font-size:18px">&nbsp&nbsp&nbspSex</span>
+					  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					  <input type="radio" name="sex" value="male" ng-model="data.sex">
+					  <span style="color:white; font-size:18px">Male</span>
+					  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					  <input type="radio" name="sex" value="female" ng-model="data.sex">
+					  <span style="color:white; font-size:18px">Female</span>
+				</form>
+				
+				<!--<form>
+					  <span style="color:white; font-size:18px">&nbsp&nbsp&nbspMarital Status</span>
+					  &nbsp&nbsp&nbsp&nbsp
+					  <input type="radio" name="married" value="yes" ng-model="data.married">
+					  <span style="color:white; font-size:18px">Married</span>
+					  &nbsp<br>
+					  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					  <input type="radio" name="married" value="no" ng-model="data.married"  checked>
+					  <span style="color:white; font-size:18px">Unmarried</span>
+				</form>-->
+			
+	<!--		//data object is passed to the signup()				-->
+		<div class="spacer" style="height: 20px;"></div>
+            <button ng-click="personal(data)" class="button button-positive button-block ">Next</button>
+        </form>
+    </ion-content>
+	</ion-view>
+
+	
+
+</ion-pane>

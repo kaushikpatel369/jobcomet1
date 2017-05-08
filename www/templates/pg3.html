@@ -1,0 +1,61 @@
+<ion-pane style="background: url(img/win1.png) center; background-size: cover;"> 
+      
+        
+	<ion-view title="Login" id="page2" style="background: url(img/bkg1.png) center; background-size: cover;">
+		<ion-content padding="true" class="padding has-header">
+		
+		
+		
+					<div class="bar bar-header bar-positive" style="background:transparent;">
+					   <h1 class="title" style="color:#009688"><b>STUDENT LOGIN</b></h1>
+					</div>
+			
+		
+		<div class="spacer" style="height: 50px;"></div>
+			
+			<form id="myform" class="list">
+				<ion-list>
+					<div class="item item-input-inset">
+					  <label class="item item-input-wrapper" style="border-bottom:1px solid #061b7a">
+						<input type="email" style="color:black" ng-model="user.email" placeholder="Email">
+					  </label>
+				   </div>
+					<div class="item item-input-inset">
+					  <label class="item item-input-wrapper" style="border-bottom:1px solid #061b7a">
+						<input type="password" style="color:black" ng-model="user.password" placeholder="Password">
+					  </label>
+				   </div>
+				</ion-list>
+				
+				
+				<div class="animated flipInX" style="padding-bottom:0px" >
+					<div class="item item-divider"style="padding-bottom:0px" >
+						<div class="item item-body" style="padding-bottom:0px">
+							<a onclick="myfun()" ng-click="login(user)" id="login-button1" class="button button-positive button-block">Log in</a>
+							<a ui-sref="register" ng-click="pop()" id="login-button2" style="font-size:18px; padding-bottom:0px" class="button button-dark button-block button-clear">Forgot password?</a>
+				
+						</div>
+					<a ui-sref="register" ng-click="sLogin()" id="login-button2" style="text-shadow: 1px 1px black; font-size:20px" class="button button-balanced button-block button-clear">Or create an account</a>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				<p style="text-align:center">Want to login with social account?</p>
+				
+				<div class="row  padding" style="padding-bottom:0px" >
+						<div class="col"> <a class=" button-royal button button-block" ng-click="LoginwithFacebook()"><i class="icon ion-social-facebook"></i></a> </div>
+						<!--<div class="col"> <a class="button-assertive button button-block" ng-click="googleSignIn()"><i class="icon ion-social-google"></i></a> </div>-->
+				</div>
+				<a ui-sref="register" ng-click="ambassador()" id="login-button2" style="text-shadow: 1px 1px black; font-size:18px" class="button button-assertive button-block button-clear">Become campus ambassador!</a>
+			</form>
+		</ion-content>
+	</ion-view>
+		
+
+</ion-pane>	
+ 

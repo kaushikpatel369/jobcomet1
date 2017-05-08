@@ -1,0 +1,49 @@
+<ion-pane style="background: url(img/win1.png) center; background-size: cover;"> 
+      
+        
+	<ion-view title="Login" id="page2" style="background: url(img/bkg1.png) center; background-size: cover;">
+		<ion-content padding="true" class="padding has-header">
+		
+		
+					<div class="bar bar-header bar-positive" style="background:transparent;">
+					   <h1 class="title" style="color:#009688"><b>COLLEGE LOGIN</b></h1>
+					   
+					</div>
+	
+		
+		<div class="spacer" style="height: 80px;"></div>
+			
+			<form id="myform" class="list">
+				<ion-list>
+					<div class="item item-input-inset">
+					  <label class="item item-input-wrapper" style="border-bottom:1px solid #061b7a">
+						<input type="text" ng-model="user.clgemail" style="color:black" placeholder="Email">
+					  </label>
+				   </div>
+					<div class="item item-input-inset">
+					  <label class="item item-input-wrapper" style="border-bottom:1px solid #061b7a">
+						<input type="password" ng-model="user.clgpassword" style="color:black" placeholder="Password">
+					  </label>
+				   </div>
+				</ion-list>
+				<div class="spacer" style="height: 20px;"></div>
+				
+				<div class="spacer" style="height: 50px;"></div>
+				
+				<div class="animated flipInX" >
+					<div class="item item-divider">
+						<div class="item item-body">
+						<a onclick="myfun()" ng-click="login(user)" id="login-button1" class="button button-royal button-block">Log in</a>
+						</div>
+					</div>
+				</div>
+				
+				<a ui-sref="register" ng-click="clgLogin()" id="login-button2" style="text-shadow: 1px 1px black; font-size:20px" class="button button-balanced button-block button-clear">Or create an account</a>
+				
+				
+			</form>
+		</ion-content>
+	</ion-view>
+		
+
+</ion-pane>	

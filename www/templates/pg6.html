@@ -1,0 +1,132 @@
+<ion-pane style="background:#005555; background-size: cover;"> 
+	
+<ion-view title="Signup" style="background: #005555; background-size: cover;>
+<div class="spacer" style="height: 30px;"></div>
+  <ion-content padding="true" class="padding ">
+	<div class="animated flipInX" >
+		<div class="item item-divider">
+			<div class="item item-body">
+				<div class="bar bar-header bar-positive" style="background:transparent;">
+					   <h1 class="title" style="color:#ffcc5c"><b>COMPANY REGISTER</b></h1>
+					   <hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="w3-card-4 w3-margin" style="max-width:600px;">
+	<form class="list"> 
+		<h5 style="color:#ffeead; text-align:center">Login Details</h5>
+		<div class="row">
+			<div class="col col-100">
+				<label class="item item-input">
+					<span class="input-label">Email</span>
+				   <input type="email" style="border-bottom:1px solid white" placeholder="domain email" ng-model="data.cmpemail">			   
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-100">
+				<label class="item item-input">
+					<span class="input-label">Password</span>
+				   <input type="password" style="border-bottom:1px solid white" placeholder="password" ng-model="data.cmppassword">  
+				</label>
+			</div>
+		</div>
+	</form>
+	</div>
+	
+	
+	<div class="w3-card-4 w3-margin" style="max-width:600px;">
+	<form class="list"> 
+		<h5 style="color:#ffeead; text-align:center">Company Details</h5>
+		<div class="row">
+			<div class="col col-100">
+                <label class="item item-input">
+				   <span class="input-label">Name</span>
+				   <input type="text" style="border-bottom:1px solid white" placeholder="company name" ng-model="data.cmpname">
+				</label>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col col-100">
+                <label class="item item-input">
+				   <span class="input-label">Website</span>
+				   <input type="text" style="border-bottom:1px solid white" placeholder="official website" ng-model="data.cmpwebsite">
+				</label>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col col-100">
+                <label class="item item-input">
+				   <span class="input-label">Whatsapp</span>
+				   <input type="number" style="border-bottom:1px solid white" placeholder="whatsapp no." ng-model="data.cmpfax">
+				</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-100">
+				<label class="item item-input">
+					<span class="input-label">Phone</span>
+				   <input type="number" style="border-bottom:1px solid white" placeholder="contact no." ng-model="data.cmpphone">			   
+				</label>
+			</div>
+		</div>	
+	</form>
+	</div>
+	
+	<div class="w3-card-4 w3-margin" style="max-width:600px;">
+	<form class="list"> 
+		<h5 style="color:#ffeead; text-align:center">Contact Person Details</h5>
+		<div class="row">
+			<div class="col col-100">
+                <label class="item item-input">
+				   <span class="input-label">Name</span>
+				   <input type="text" style="border-bottom:1px solid white" placeholder="name" ng-model="data.cpname">
+				</label>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col col-100">
+				<label class="item item-input">
+					<span class="input-label">Email</span>
+				   <input type="email" style="border-bottom:1px solid white" placeholder="contact email" ng-model="data.cpemail">			   
+				</label>
+			</div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="col col-100">
+				<label class="item item-input">
+					<span class="input-label">Phone</span>
+				   <input type="number" style="border-bottom:1px solid white" placeholder="contact no." ng-model="data.cpphone">			   
+				</label>
+			</div>
+		</div>	
+		
+		<div class="row">
+			<div class="col col-100">
+                <label class="item item-input">
+				   <span class="input-label">Designation</span>
+				   <input type="text" style="border-bottom:1px solid white" placeholder="designation" ng-model="data.cpdesg">
+				</label>
+			</div>
+		</div>
+		
+	</form>
+	</div>
+	
+	
+	<!--		//data object is passed to the signup()				-->
+		<div class="spacer" style="height: 20px;"></div>
+        <button ng-click="cmpnext(data)" class="w3-button w3-pale-red w3-round-xlarge button-block" style="font-weight:bold; font-size:16px">Next</button>
+    </ion-content>
+	</ion-view>
+
+	
+
+</ion-pane>
