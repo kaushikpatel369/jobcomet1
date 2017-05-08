@@ -1695,7 +1695,13 @@ var collegedata={};
 		}
 	 
 		if (!AuthService.isAuthenticated()) {
-		 
+		 if(next.name=='companylist'){
+			  console.log(AuthService.isAuthenticated());
+			  console.log('NOt log in student');
+			  event.preventDefault();
+			  $state.go('student1');
+		  }
+			
 		  if(next.name=='cdetails'){
 			  console.log(AuthService.isAuthenticated());
 			  console.log('NOt log in student');
